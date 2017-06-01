@@ -1,0 +1,47 @@
+{
+  "namespace": "ru.homework.model",
+  "type": "record",
+  "name": "DataVLS",
+  "fields": [
+    {
+      "name": "dateVal",
+      "type": "string"
+    },
+    {
+      "name": "timeVal",
+      "type": "string"
+    },
+    {
+      "name": "dataList",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "DataLST",
+          "fields": [
+            {
+              "name": "val1",
+              "type": "int"
+            },
+            {
+              "name": "val2",
+              "type": "int"
+            },
+            {
+              "name": "val3",
+              "type": "int"
+            },
+            {
+              "name": "val4",
+              "type": "int"
+            },
+            {
+              "name": "val5",
+              "type": "int"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
